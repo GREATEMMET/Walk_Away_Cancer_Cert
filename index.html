@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .mainContainer {
+                position: relative;
+            }
+
+            .nameTagContainer {
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -13%);
+                z-index: 4;
+                width: 70%;
+
+            }
+
+            .nameTag {
+                width: 100%;
+            }
+
+            .personName {
+                color: white;
+                position: absolute;
+                top: 40%;
+                left: 15%;
+                font-size: 2rem;
+                word-spacing: 15px;
+                letter-spacing: 10px;
+                max-width: 75%;
+                width: 75%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profilePic {
+                position: absolute;
+                top: 36.9%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 52%;
+                height: 49.5%;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+
+           @media print {
+            .personName{
+                font-size: 120%;
+                color: white;
+            }
+           }
+        </style>
+    </head>
+
+    <body>
+        <div class="mainContainer">
+            <img src="./frame-bg.svg" alt="" class="certBackground">
+            <img src="./profile.JPEG" alt="" class="profilePic">
+            <div class="nameTagContainer">
+                <img src="./nametag.svg" alt="" class="nameTag">
+                <p class="personName">Great Chinwuba-Anemeje </p>
+            </div>
+        </div>
+    </body>
+
+</html>
